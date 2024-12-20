@@ -1,0 +1,29 @@
+<!-- ads/templates/ads/base.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Classified Ads{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <h1>Classified Ads Site</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'ads:index' %}">Home</a></li>
+                <!-- Otros enlaces de navegación -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}
+        <!-- Contenido específico de cada página -->
+        {% endblock %}
+    </main>
+
+    <footer>
+        <p>Classified Ads Footer</p>
+    </footer>
+</body>
+</html>
