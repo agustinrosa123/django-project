@@ -13,15 +13,15 @@
         <h1>Classified Ads Site</h1>
         <nav>
             <ul>
-                <li><a href="{% url 'ads:index' %}">Home</a></li> <!-- Enlace a la página principal -->
-                <li><a href="{% url 'login' %}">Login</a></li> <!-- Enlace al login, usa el tag url de Django -->
+                <li><a href="{% url 'ads:index' %}">Home</a></li>
+                <li><a href="{% url 'login' %}">Login</a></li> <!-- Enlace para el login -->
             </ul>
         </nav>
     </header>
 
     <main>
         {% block content %}
-        <!-- Aquí irá el contenido específico de cada página -->
+        <!-- Contenido específico de cada página -->
         {% endblock %}
     </main>
 
