@@ -44,8 +44,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',  # Es común incluir esto para manejar archivos estáticos
     # Otras apps propias o de terceros
-    'ads_app',  # Tu aplicación
+    'ads',  # Nombre correcto de tu aplicación
 ]
+
 
 
 
