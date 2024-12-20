@@ -1,4 +1,7 @@
-from django.http import HttpResponse
+from django.shortcuts import render
 
-def index(request):
-    return HttpResponse("Hola, esta es la página de inicio de Ads.")
+# Vista para mostrar la lista de anuncios
+def ads_list(request):
+    # Aquí puedes obtener los anuncios desde la base de datos
+    # y pasarlos al template.
+    return render(request, 'ads/ads_list.html')  # Asegúrate de tener el template ads_list.html
