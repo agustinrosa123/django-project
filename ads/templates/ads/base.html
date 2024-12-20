@@ -8,13 +8,15 @@
     <link rel="icon" href="https://github.com/favicon.ico" type="image/x-icon"> <!-- Favicon (opcional) -->
     <title>Classified Ads</title>
 </head>
+
 <body>
     <header>
         <h1>Classified Ads Site</h1>
         <nav>
             <ul>
-                <li><a href="{% url 'ads:index' %}">Home</a></li>
-                <li><a href="{% url 'login' %}">Login</a></li> <!-- Enlace para el login -->
+                <li><a href="{% url 'index' %}">Home</a></li>  <!-- Enlace a la página principal -->
+                <li><a href="{% url 'ads_list' %}">Ads</a></li>  <!-- Enlace a la lista de anuncios -->
+                <li><a href="{% url 'login' %}">Login</a></li>  <!-- Enlace de Login -->
             </ul>
         </nav>
     </header>
